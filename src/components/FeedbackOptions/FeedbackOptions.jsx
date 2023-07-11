@@ -1,11 +1,11 @@
-import { ButtonContainer } from './Buttons.styled';
+import { ButtonContainer, List } from './Buttons.styled';
 import PropTypes from 'prop-types';
 
 export const FeedbackOptions = ({ options, updateState }) => {
   return (
    
           <div>
-            <ul>
+            <List>
               {options.map(option => {
                 return (
                   <li key={option}>
@@ -15,7 +15,7 @@ export const FeedbackOptions = ({ options, updateState }) => {
                   </li>
                 );
               })}
-            </ul>
+            </List>
           </div>
         );
       }
