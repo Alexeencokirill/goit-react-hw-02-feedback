@@ -8,7 +8,6 @@ export const Statistics = ({
   totalFeedback,
   feedbackPercentage,
 }) => {
-  console.log(typeof feedbackPercentage);
   return (
     <StatList>
       <ul>
@@ -36,6 +35,6 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  countTotalFeedback: PropTypes.number,
-  feedbackPercentage: PropTypes.number,
+  totalFeedback: PropTypes.func.isRequired,
+  feedbackPercentage: PropTypes.func.isRequired,
 };
